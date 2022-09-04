@@ -1,0 +1,129 @@
+
+/* header styles */
+
+.header {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0;
+  
+}
+
+/* Pop up window for items in card */
+.cartitem {
+  display: flex;
+  justify-content: space-between;  /* to create little space around it*/
+  align-items: left;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  /* color of text and delete icon in pop up */
+  color: #62137f;      
+  background-color: rgb(96, 247, 247);
+}
+
+  /* for small product image in pop up" */
+.cartItemImg {
+  border-radius: 30%; 
+   width: 60px;
+  height: 50px;
+  object-fit:cover;
+  
+}
+
+/**/
+.cartItemDetail {
+  display:flex;
+  flex: 1;
+  /* flex: 1 = means it takes the full width of the pop up column     */
+  padding: 0 30px;
+  flex-direction: column;
+  
+}
+
+/* Home Page */
+
+.home {
+  display: flex;
+  background-color: rgb(17, 9, 76);
+  
+}
+
+.filters {    /* for sidebar filter*/
+  background-color:rgb(16, 83, 146);
+  color: white;
+  padding: 20px;
+  display: flex;     /* flex ia a type of sidebar*/
+  flex-direction: column;  /* all filter parameters will be shown in column/vertical form*/
+  width: 20%;
+  margin: 10px;
+  height: 86vh;  /* vh=view code height*/
+}
+
+.filters > span {        /* to give padding bw spans/ filter parameters*/
+  padding-bottom: 20px;
+}
+
+/* Filter product sidebar*/
+.title {
+  font-size: 30px;
+  color:rgb(189, 177, 14);
+}
+
+.productContainer {      /* for all products*/
+  display: flex;
+  width: 78%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #62137f;
+  background-color: rgb(17, 9, 76);
+
+}
+
+/* Product Cards */
+.products {
+  width: 30%;
+  margin: 10px;
+  border-radius: 60px;
+  
+  color: aqua;
+  
+
+  
+}
+/* "summary" from cart.js ,for sidebar of cart */
+.summary {
+  width: 30%;
+  
+}
+
+/* Media Queries */
+@media (max-width: 771px) {
+  .filters {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .filters > span {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 18px !important;
+    
+  }
+
+  .productContainer {
+    width: 58%;
+    padding: 0;
+  }
+
+  .search {
+    display: none !important;
+  }
+
+  .products {
+    width: 100%;
+  }
+}
